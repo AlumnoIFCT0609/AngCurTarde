@@ -1,0 +1,9 @@
+En los procesadores modernos, la memoria caché se organiza en tres niveles: L1, L2 y L3. Cada nivel tiene diferentes tamaños y velocidades, siendo L1 la más rápida y pequeña, y L3 la más grande y lenta. 
+Explicación detallada:
+Caché L1:
+Es la memoria caché más pequeña y rápida, ubicada directamente en el núcleo del procesador. Se divide en dos partes: caché de datos (L1d) y caché de instrucciones (L1i). 
+Caché L2:
+Es un poco más grande y lenta que la L1, pero aún más rápida que la memoria principal (RAM). Puede ser compartida entre varios núcleos de CPU o dedicada a un solo núcleo, dependiendo de la arquitectura. 
+Caché L3:
+Es la caché más grande y lenta de las tres, pero aún más rápida que la RAM. Generalmente es compartida por todos los núcleos de la CPU. 
+La jerarquía de la memoria caché permite que el procesador acceda a los datos y las instrucciones más frecuentemente usadas de manera más rápida, mejorando el rendimiento general del sistema. 

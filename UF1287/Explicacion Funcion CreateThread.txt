@@ -1,0 +1,20 @@
+Funcion CreateThread
+
+HANDLE CreateThread(
+  LPSECURITY_ATTRIBUTES   lpThreadAttributes, // Seguridad (normalmente NULL)
+  SIZE_T                  dwStackSize,        // Tamaño de pila (0 = por defecto)
+  LPTHREAD_START_ROUTINE  lpStartAddress,     // Función que ejecutará el hilo
+  LPVOID                  lpParameter,        // Parámetro que se pasa a esa función
+  DWORD                   dwCreationFlags,    // Flags (0 = empieza inmediatamente)
+  LPDWORD                 lpThreadId          // ID del hilo (puede ser NULL)
+);
+
+
+Parámetro	Significado
+lpThreadAttributes	Seguridad del hilo. Normalmente se deja en NULL.
+
+dwStackSize		Tamaño inicial de la pila. 0 usa el valor por defecto del sistema.
+lpStartAddress		Dirección de la función que ejecutará el hilo. Debe tener tipo 				DWORD WINAPI.
+lpParameter		Parámetro que se le pasa a la función del hilo. Puede ser NULL o un puntero.
+dwCreationFlags		0 para que el hilo comience de inmediato. También puedes usar 				CREATE_SUSPENDED.
+lpThreadId		Puntero a una variable que recibirá el ID del hilo. Puede ser NULL.
